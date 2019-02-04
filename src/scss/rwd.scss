@@ -1,0 +1,41 @@
+/***WRAPPER***/
+.wrapper,
+.wrapper--header{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media (min-width: 576px) {
+    .wrapper,
+    .wrapper--header{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper,
+    .wrapper--header{
+        max-width: 720px;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper,
+    .wrapper--header{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .wrapper {
+        max-width: 1140px;
+    }
+    .wrapper--header {
+        max-width: 1230px;
+    }
+}
+/***END WRAPPER***/

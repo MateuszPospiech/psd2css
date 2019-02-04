@@ -1,0 +1,146 @@
+@import "settings";
+
+
+body{
+    background-color: $color-bg;
+    color: $color-text;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}  
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.col-1{
+    flex: 1;
+}
+section{
+    padding: 60px 0;
+}
+.h2{
+    color: $color-heading--light;
+    font-size: 2.2rem;
+    letter-spacing: -0.8px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    
+    &--dark{
+        color: $color-heading;
+    }
+}
+.h3{
+    color: $color-heading;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+}
+.h4{
+    color: $color-heading;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+}
+
+/***HEADER***/
+#header{
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: $color-bg;
+}
+/***END HEADER***/
+ 
+/***MAIN***/
+#heading{
+    background-color: $color-bg-dark;
+    text-align: center;
+    position: relative;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-color: $color-2nd;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+    }
+}
+.subtitle{
+    color: $color-text--light;
+    font-weight: 300;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    
+    &--dark{
+        color: $color-text--dark;
+    }
+}
+
+.box{
+    justify-content: space-between;
+    margin-top: 45px;
+    
+    .box__block{
+        box-sizing: border-box;
+        margin: 10px;
+        padding: 40px 35px;
+        background-color: $color-bg;
+        min-height: 228px;
+
+        p{
+            color: #808080;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 15px
+        }
+        
+        img{
+            margin: 0 auto;
+        }
+    }
+}
+
+#heading2{
+    background-color: $color-bg-light;
+    text-align: center;
+    
+    .subtitle{
+        margin-bottom: 45px;
+    }
+}
+/***END MAIN***/
+
+/***FOOTER***/
+#footer {
+    padding: 20px 0;
+    background-color: $color-bg-dark; 
+    .footer__copyright{
+        justify-content: center;
+    }
+    
+    a{
+        color: $color-text--light;
+        text-decoration: none;
+        transition: 0.4s all;
+        
+        &:hover {
+            color: darken($color-text--light, 20);
+        }
+    }
+}
+/***END FOOTER***/
+
+@import "rwd";
+
+
+
